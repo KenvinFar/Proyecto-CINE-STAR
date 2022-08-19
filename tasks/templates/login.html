@@ -1,0 +1,37 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="es-EC">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Login" />
+    <link rel="shortout icon" href="{%static '/img/fon.png'%}">  
+    <link rel="stylesheet" href="{%static 'logink.css'%}" />
+    <title>LOGIN</title>
+  </head>
+
+  <body>
+    <img src="/static/img/logo.png" class="logo" alt="logo Image">
+    <form class="form" method="post" action="{% url 'login' %}">
+      <h2 class="form__title">Iniciar Seccion</h2>
+      {%csrf_token%}
+      <div class="form__container">
+
+        <div class="form__group">
+          <input type="text" name="user1" id="user" class="form__input" placeholder=" ">
+          <label for="user" class="form__label">Usuario:</label>
+          <span class="form__line"></span>
+        </div>
+        
+        <div class="form__group">
+          <input type="password" name="password1" id="password" class="form__input" placeholder=" ">
+          <label for="password" class="form__label">Contraseña:</label>
+          <span class="form__line"></span>
+        </div>
+        <input type="submit" class="form__submit" value="Entrar">
+        <p class="form__paragraph">¿Aún no tienes una cuenta? </p>
+        <a href="/CINE-STAR/registros/" class="form__link" >Entra aquí</a>
+    
+      </div>
+    </form>
+  </body>
+</html>

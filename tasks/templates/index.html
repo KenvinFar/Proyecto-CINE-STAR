@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'estilosindex.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="shortout icon" href="{%static '/img/fon.png'%}">   
+    <title>CINE-STAR</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+          <img src="{%static '/img/logo cine.png'%}" alt="logo" width="100px" height="90px"> <h2 class="logotipo">CINE-STAR</h2>
+            <nav>
+                <a href="#" class="activo"></a>
+                <a href="/CINE-STAR/login/">Iniciar secion</a>
+                <a href="/CINE-STAR/login/">Cerrar secion</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <p class="contenedor">
+            HOLA,
+            <span> Descubre que peliculas te gustaria ver en esta semana </span>
+        </p>
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <link rel="shortout icon" href="{%static '/img/thor.png'%}">  
+                <h3 class="titulo">Thor love and thonder</h3>
+                <button role="button" class="boton">Compra tus entradas</button></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="cartelera ">
+            Cartelera
+        </div>
+
+        <div class="peli1">
+            <a href="/CINE-STAR/THOR/">
+                <img src="{%static '/img/thor1.png'%}" width="200px" height="290px">
+            </a>
+            <p>THOR AMOR Y TRUENO</p>
+        </div>
+
+        <div class="peli2">
+            <a href="/CINE-STAR/MINIONS/">
+                <img src="{%static '/img/ama.png'%}" width="200px" height="290px">
+            </a>
+            <P>MINIONS NACE UN VILLANO</P>
+        </div>
+
+        <div class="peli3">
+            <a href="/CINE-STAR/JURASSIC/">
+                <img src="{%static '/img/Dino.png'%}" width="200px" height="290px">
+            </a>
+            <p>JURASSIC WORLD 3</p>
+        </div>
+
+        <div class="peli4">
+            <a href="/CINE-STAR/TELF/">
+                <img src="{%static '/img/Tel.png'%}" width="200px" height="290px">
+            </a>
+            <p>TELEFONO NEGRO</p>
+        </div>
+
+        <div class="peli5">
+            <a href="/CINE-STAR/TOP/">
+                <img src="{%static '/img/top.png'%}" width="200px" height="290px">
+            </a>
+            <p>TOP GUN MAVERICK</p>
+        </div>
+
+        <div class="peli6">
+            <a href="/CINE-STAR/LIGHT/">
+                <img src="{%static '/img/lig.png'%}" width="200px" height="290px">
+            </a>
+            <p>LIGHTYEAR</p>
+        </div>
+        
+        <footer class="pie-pagina">
+            <div class="grupo-1 ">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="{%static '/img/Cine.png'%}" alt="Logo de CINE-STAR">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2> Saber mas sobre nosotros </h2>
+                    <p>Esta pagina se la a desarrollado con la intencion de poder aprender mas sobre los conosimientos adquiridos durante los anteriores años. </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quae tempora. Eos unde velit corporis dolor facere. Ipsam saepe eius.</p>
+                </div>
+                <div class="box">
+                    <h2> SIGUENOS EN: </h2>
+                    <div class="red-social">
+                        <a herf="" class="fa fa-facebook"></a>
+                        <a herf="" class="fa fa-youtube"></a>
+                        <a herf="" class="fa fa-instagram"></a>
+                        <a herf="" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>CINE-STAR</b> - Todos los derechos reservados </small>
+            </div>
+        </footer>
+       
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

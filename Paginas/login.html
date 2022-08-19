@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>LOGIN</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <LINK REL=StyleSheet HREF="/css/login.css" TYPE="text/css" MEDIA=screen>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script type="text/javaScript" src="./js/registro1.js"></script>
+  <script type="text/javaScript" src="./js/datos.js"></script>
+</head>
+
+<body>
+  <div class="col md-4">
+    <a href="/index.html">Regresar</a>
+    <a class="nav-item nav-link" href="registros.html">registrar</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <form>
+          <div class="form-group">
+            <label for="usuario">Usuario:</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario">
+          </div>
+          <div class="form-group">
+            <label for="clave">Clave:</label>
+            <input type="password" class="form-control" id="clave" placeholder="Ingrese su calve">
+          </div>
+          <div>
+            <br>
+            <button onclick="Ingresar()" type="submit" class="btn btn-primary">Iniciar Sesion</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

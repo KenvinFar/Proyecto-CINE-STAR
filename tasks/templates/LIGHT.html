@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/estilos6.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'estilosn6.css'%}">
+    <link rel="shortout icon" href="{%static '/img/fon.png'%}">
+    <title>CINE-STAR</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="{%static '/img/logo.png'%}" alt="logo" width="150px" height="120px"> <h2 class="logotipo">CINE-STAR</h2>
+            <nav>
+                <a href="#" class="activo"></a>
+                <a href="/CINE-STAR/index/">Inicio</a>
+                <a href="#">Mi perfil</a>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <p class="contenedor">
+            HOLA,Seleciona tus voletos
+        </p>
+        <div class="peli6">
+            <img src="{%static '/img/lig.png'%}" width="200px" height="290px">
+            <p>LIGHTYEAR</p>
+            <i class="fa fa-stopwatch"></i>
+            <p>2h 00min</p>
+        </div>
+        <div class="sino">
+            <h3>Sinopsis</h3>
+            <p>La película cuenta los orígenes de Buzz Lightyear, el héroe que inspiró el juguete, y nos da a conocer la historia de este legendario Guardián Espacial narrada como una apasionante aventura intergaláctica. "El mundo de Buzz siempre me ha fascinado", ha declarado el director Angus MacLane.</p>
+        </div>
+        <div class="cuadro">
+            <label> Tickets </label>
+            <h1>Ingrese sus datos </h1>
+            <form action="{% url 'create_Tickets'%}" method="POST">
+                {%csrf_token%}
+                <p>Nombre</p>
+                <input type="text" name="Nombre" placeholder="Esciba Aqui" />
+                <p>Idioma de la pelicula</p>
+                <input type="text" name="language_movie" placeholder="Esciba Aqu" />
+                <p>Duracion</p>
+                <input type="time" name="duration" placeholder="Esciba Aqui" />
+                <p>Asientos</p>
+                <input type="text" name="seating" placeholder="Esciba Aqui" />
+                <p>Lugar</p>
+                <input type="text" name="location" placeholder="Escriba Aqui" />
+                <button>save</button>
+              </form>
+        </div>
+
+        <footer class="pie-pagina">
+            <div class="grupo-1 ">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="{%static '/img/Cine.png'%}" alt="Logo de CINE-STAR">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2> Saber mas sobre nosotros </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis </p>
+                </div>
+                <div class="box">
+                    <h2> SIGUENOS EN: </h2>
+                    <div class="red-social">
+                        <a herf="#" class="fa fa-facebook"></a>
+                        <a herf="#" class="fa fa-youtube"></a>
+                        <a herf="#" class="fa fa-instagram"></a>
+                        <a herf="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>CINE-STAR</b> - Todos los derechos reservados </small>
+            </div>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
